@@ -4,8 +4,13 @@
 name: Node.js Package
 
 on:
-  workflow_dispatch
-  
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version'
+        required: true
+        default: 'patch'
+
   release:
     types: [created]
 

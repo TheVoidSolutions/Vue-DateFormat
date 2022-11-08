@@ -4,7 +4,7 @@ Vue-DateFormat is a component designed to format dates in a Vue.js application. 
 
 ## Installation
 
-```npm install vue-dateformat```
+```npm i @voidsolutions/vue-dateformat```
 
 ## Usage as a global component
 

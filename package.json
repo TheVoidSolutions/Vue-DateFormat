@@ -18,7 +18,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "exit 0"
   },
   "dependencies": {
     "vue": "^3.2.41"
@@ -26,5 +27,9 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.2.0",
     "vite": "^3.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VoidSolutionsGit/Vue-DateFormat"
   }
 }

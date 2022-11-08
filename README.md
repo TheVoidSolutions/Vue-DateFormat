@@ -1,6 +1,6 @@
-# Vue Dateformat
+# Vue DateFormat
 
-Vue-Dateformat is a component designed to format dates in a Vue.js application.
+Vue-DateFormat is a component designed to format dates in a Vue.js application. It simple takes in a `Date` or `String` and converts it via `toLocaleString()` with different options passed in depending on your props.
 
 ## Installation
 
@@ -42,10 +42,10 @@ In your template, use the component as follows:
 | no-year     | Boolean        | `false`               | If true, the year will not be displayed             |
 | has-time    | Boolean        | `false`               | Whether to show a time component                    |
 | classes     | String         | `'vs-date'`           | Classes to be applied to the \<span>                |
-| locales     | String         | `navigator.languages` | The locale to be used for formatting                |
+| locales     | String or Array| `navigator.languages` | The locale to be used for formatting                |
 
 # Examples
-
+Here are some examples for you to become familiar with our date formatter.
 ## No Props
     
 ```html
@@ -60,5 +60,9 @@ Output: 1 January 1970
 
 Output:  Jan 2020
 ```
+
+## Custom Styling
+
+You can also use the `classes` prop to pass any specific class over to the `<span>` tag, just on the off chance you need something like that.
 
 

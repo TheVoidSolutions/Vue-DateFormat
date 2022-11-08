@@ -15,7 +15,7 @@ import { createApp } from 'vue'
 const app = createApp(App)
 ...
 
-import DateFormat from 'vue-dateformat'
+import DateFormat from '@void/vue-dateformat'
 app.use(DateFormat);
 
 ...

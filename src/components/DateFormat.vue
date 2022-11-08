@@ -22,6 +22,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  noMonths: {
+    type: Boolean,
+    default: false,
+  },
   shortMonth: {
     type: Boolean,
     default: false,
@@ -43,6 +47,7 @@ const options = computed(() => {
 
   props.noDays ? null : (baseOptions.day = "numeric");
   props.noYears ? null : (baseOptions.year = "numeric");
+  props.noMonth ? null : (baseOptions.month = "numeric");
 
   props.shortMonth
     ? (baseOptions.month = "short")

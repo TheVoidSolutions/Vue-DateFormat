@@ -1,6 +1,6 @@
 {
   "name": "@voidsolutions/vue-dateformat",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A Vue.js component for formatting dates",
   "main": "./dist/vue-dateformat.umd.js",
   "module": "./dist/vue-dateformat.es.js",

@@ -1,7 +1,40 @@
-# Vue 3 + Vite
+# Vue Dateformat
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vue-Dateformat is a component designed to format dates in a Vue.js application.
 
-## Recommended IDE Setup
+## Installation
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+```npm install vue-dateformat```
+
+## Usage as a global component
+
+In your ```main.js``` file, import the component and register it as a global component.
+
+```javascript
+import { createApp } from 'vue'
+const app = createApp(App)
+...
+
+import DateFormat from 'vue-dateformat'
+app.use(DateFormat);
+
+...
+
+app.mount('#app')
+```
+
+In your template, use the component as follows:
+
+```html
+
+<date-format :date="date" />
+
+```
+
+### Props
+
+| Prop | Type | Default | Description |
+| --- | --- | --- | --- |
+| date | String or Date | new Date() | The date to be formatted |
+| has-time | Boolean | false | Whether to show a time component |
+

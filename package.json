@@ -1,20 +1,19 @@
 {
   "name": "@voidsolutions/vue-dateformat",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "A Vue.js component for formatting dates",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "main": "./dist/vue-dateformat.umd.js",
   "module": "./dist/vue-dateformat.es.js",
   "exports": {
     ".": {
       "import": "./dist/vue-dateformat.es.js",
       "require": "./dist/vue-dateformat.umd.js"
-    },
-    "./dist/styles.css": "./dist/styles.css"
+    }
   },
-  "files": [
-    "dist"
-  ],
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

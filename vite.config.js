@@ -9,13 +9,13 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.js'),
       name: 'vue-dateformat',
       fileName: (format) => `vue-dateformat.${format}.js`,
-    }
-  },
-  rollupOptions: {
-    external: ['vue'],
-    output: {
-      globals: {
-        vue: 'Vue',
+    },
+    rollupOptions: {
+      external: ['vue'],
+      output: {
+        globals: {
+          vue: 'Vue',
+        },
       },
     },
   },

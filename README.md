@@ -1,6 +1,11 @@
 # Vue DateFormat
+This plugin is compatible with **Vue 3**
 
 Vue-DateFormat is a component designed to format dates in a Vue.js application. It simple takes in a `Date` or `String` and converts it via `toLocaleString()` with different options passed in depending on your props.
+
+
+For any bugs or feature requests, regarding this component, head on over to the [issues](https://github.com/VoidSolutionsGit/Vue-DateFormat/issues) page. For any queries that do not relate to this exact component, contact us at [Void Solutions](https://voidsolutions.net/).
+
 
 ## Installation
 

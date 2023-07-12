@@ -11,7 +11,25 @@ For any bugs or feature requests, regarding this component, head on over to the 
 
 ```npm i @voidsolutions/vue-dateformat```
 
-## Usage as a global component
+## Nuxt 3 Compatiblity
+
+We need to create a plugin to use this component globally in Nuxt 3. Create `dateformat.client.js` to your `/plugins` directory. The contents of the file should be as follows:
+
+```javascript
+import dateformat from "@voidsolutions/vue-dateformat";
+
+export default defineNuxtPlugin(nuxtApp => {
+    nuxtApp.vueApp.use(dateformat);
+})
+```
+
+You can now use the component in your templates as follows:
+
+```html
+<date-format :date="new Date()" />
+```
+
+## Usage as a global component in Vue 3
 
 In your ```main.js``` file, import the component and register it as a global component.
 

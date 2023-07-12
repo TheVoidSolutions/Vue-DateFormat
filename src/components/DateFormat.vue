@@ -14,15 +14,19 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  noMinutes: {
+    type: Boolean,
+    default: false,
+  },
   noDays: {
     type: Boolean,
     default: false,
   },
-  noYears: {
+  noMonths: {
     type: Boolean,
     default: false,
   },
-  noMonths: {
+  noYears: {
     type: Boolean,
     default: false,
   },
@@ -57,6 +61,7 @@ const options = computed(() => {
     baseOptions.hour = "numeric";
     baseOptions.minute = "numeric";
     props.noSeconds ? null : (baseOptions.second = "numeric");
+    props.noMinutes ? null : (baseOptions.minute = "numeric");
   }
 
   return baseOptions;

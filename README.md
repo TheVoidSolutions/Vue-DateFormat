@@ -59,8 +59,12 @@ In your template, use the component as follows:
 | Prop        | Type           | Default               | Description                                         |
 | ----------- | -------------- | --------------------- | --------------------------------------------------- |
 | date        | String or Date | `new Date()`          | The date to be formatted                            |
+| no-seconds  | Boolean        | `false     `          | If true, the seconds will not be displayed          |
+| no-minutes  | Boolean        | `false`               | If true, the minutes will not be displayed          |
+| no-hours    | Boolean        | `false`               | If true, the hours will not be displayed            |
 | no-days     | Boolean        | `false`               | If true, the day of the month will not be displayed |
 | no-month    | Boolean        | `false`               | If true, the month will not be displayed            |
+| no-date     | Boolean        | `false`               | If true, the date will not be displayed             |
 | short-month | Boolean        | `false`               | If true, the month will be abbreviated              |
 | no-year     | Boolean        | `false`               | If true, the year will not be displayed             |
 | has-time    | Boolean        | `false`               | Whether to show a time component                    |

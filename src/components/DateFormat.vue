@@ -53,12 +53,6 @@ const options = computed(() => {
   props.noYears ? null : (baseOptions.year = "numeric");
   props.noMonth ? null : (baseOptions.month = "numeric");
 
-  if (props.noDate) {
-    baseOptions.day = undefined;
-    baseOptions.month = undefined;
-    baseOptions.year = undefined;
-  }
-
   props.shortMonth
     ? (baseOptions.month = "short")
     : (baseOptions.month = "long");
@@ -68,6 +62,12 @@ const options = computed(() => {
     baseOptions.minute = "numeric";
     props.noSeconds ? null : (baseOptions.second = "numeric");
     props.noMinutes ? null : (baseOptions.minute = "numeric");
+  }
+
+  if (props.noDate) {
+    baseOptions.day = undefined;
+    baseOptions.month = undefined;
+    baseOptions.year = undefined;
   }
 
   return baseOptions;
